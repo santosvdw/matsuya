@@ -1,0 +1,117 @@
+@use '../01-usables/usables' as *;
+
+footer {
+    .top-footer {
+        background-color: $black;
+        width: 100vw;
+        padding: $space-m-l 10vw;
+        background-image: url('http://matsuya.test/assets/stars.webp');
+        background-position: center;
+
+        .contact-informatie, .sociale-media, .paginas {
+            display: flex;
+            flex-flow: column;
+            
+            h5 {
+                color: $clr-primary;
+                font-family: $font-body;
+                margin-bottom: $space-3xs-2xs;
+            }
+            li {
+                font-size: 1em;
+                list-style: none;
+                color: $white;
+                a {
+                    font-size: 1em;
+                    color: $white;
+                    &:hover {
+                        color: $clr-primary;
+                    }
+                }
+            }
+        }
+
+        .background-image {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            z-index: -10;
+        }
+    }
+
+    .bottom-footer {
+        display: flex;
+        width: 100vw;
+        background-color: $clr-primary;
+        padding: $space-xs-s 10vw;
+        font-size: 0.9em;
+        
+        .copyright {
+            font-weight: 500;
+        }
+
+        a {
+            font-weight: 500;
+            color: $black;
+            font-size: 1em;
+        }
+
+        a:hover {
+            color: $cream;
+        }
+    }
+}
+
+@media screen and (min-width: 875px) {
+    .top-footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+
+        .contact-informatie, .sociale-media, .paginas {
+            width: 20vw;
+        }
+
+        div:first-of-type {
+            align-items: flex-start;
+        }
+    
+        div:nth-of-type(2) {
+            align-items: center;
+        }
+    
+        div:nth-of-type(3) {
+            align-items: flex-end;
+        }
+    }
+
+    .bottom-footer {
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .top-footer {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        gap: $space-m-l;
+
+        .contact-informatie, .sociale-media, .paginas {
+            width: 100%;
+        }
+    }
+    .bottom-footer {
+        justify-content: flex-start;
+        flex-flow: column wrap;
+        gap: $space-2xs-xs;
+
+        .watermark-link {
+            white-space: nowrap;
+        }
+    }
+}

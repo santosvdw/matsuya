@@ -1,0 +1,126 @@
+@use '../01-usables/usables' as *;
+
+header.home {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    min-height: 80vh;
+    align-items: center;
+    height: fit-content;
+    margin: 0 auto 10vh;
+    
+    .header-content, .header-img {
+        width: 40vw;
+        display: flex;
+        justify-content:center;
+        height: inherit;
+        min-width: 310px;
+    }
+
+    .header-content {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: $space-xs-s;
+        h1 {
+            .underline {
+                text-decoration: 3px underline $clr-primary;
+                text-underline-offset: 5px;
+            }
+        }
+        h5 {
+            font-weight: 500;
+            position: relative;
+            top: calc($space-3xs-2xs * -1);
+        }
+    }
+
+    
+    .header-img {
+        align-items: center;
+        img {
+            transform: rotate(-3.29deg);
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-user-drag: none;
+            width: clamp(100px, 429px, 700px);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header.home {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        gap: $space-s-m;
+
+        .header-img {
+            align-items: center;
+            position: relative;
+            width: 80vw;
+            img {
+                width: 95%;
+            }
+        }
+    }
+}
+
+.other {
+    header {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        padding: $space-l-xl 0;
+        overflow: hidden;
+        position: relative;
+        background-color: blue;
+        height: 250px;
+
+        .header-title {
+             width: 100vw;
+            height: 250px;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            z-index: 30;
+        }
+        
+        h1 {
+            font-family: $font-body;
+            color: $white;
+        }
+
+        .background-image-header {
+            position: absolute;
+            height: 250px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            
+            &-overlay {
+                height: inherit;
+                width: 100vw;
+                background-color: $clr-primary;
+                z-index: 10;
+                position: absolute;
+                opacity: 0.85;
+                backdrop-filter: blur(2);
+                top: 0;
+            }
+
+            img {
+                width: 100vw;
+            }
+        }
+       
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .other {
+        .background-image-header img {
+            height: 100%;
+            min-width: 100vw;
+        }
+    }
+}

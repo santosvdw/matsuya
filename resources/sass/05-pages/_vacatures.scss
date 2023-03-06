@@ -1,0 +1,27 @@
+@use '../01-usables/usables' as *;
+
+#vacatures {
+    padding: $space-m-l 10vw;
+
+    .openstaande-vacatures, .vacature-geinteresseerd {
+        margin-bottom: $space-l-xl;
+    }
+
+    ul {
+        margin-top: $space-3xs-2xs;
+        margin-left: $space-l-xl;
+        list-style: disc;
+    }
+
+    .vacature-leeftijd {
+            text-transform: capitalize;
+            font-style: italic;
+    }
+
+    a {
+        color: $clr-primary;
+        &:hover {
+            color: $clr-secondary;
+        }
+    }
+}

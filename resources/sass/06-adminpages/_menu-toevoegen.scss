@@ -1,0 +1,38 @@
+@use '../01-usables/usables' as *;
+
+.menu-toevoegen, .menu-bewerken {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin: $space-m-l 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: $space-xs-s;
+        width: 90vw;
+
+        thead {
+            background-color: $clr-primary;
+        }
+        td {
+            padding: 4px 8px;
+            border: 1px solid $black;
+            input {
+                margin: auto;
+                display: block;
+
+                &.prijs {
+                    width: 75px;
+                }
+                
+                &.radio {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

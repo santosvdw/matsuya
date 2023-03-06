@@ -1,0 +1,67 @@
+@use '../01-usables/usables' as *;
+
+body {
+    font-family: $font-body;
+    font-size: $step-0;
+    color: $black;
+
+    a, input, button, li {
+        // font-size: 20px;
+        font-family: $font-body;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-heading;
+    }
+
+    h1#title {
+        font-family: $font-title;
+        font-size: calc($step-5 * 1.5);
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: $step-5;
+    }
+
+    h2 {
+        font-size: $step-4;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: $step-3;
+    }
+
+    h5 {
+        font-size: $step-1;
+    }
+
+    
+    h4 {
+        font-size: calc($step-2 * 0.6);
+        font-weight: 500;
+        font-stretch: condensed;
+        font-family: $font-body;
+    }
+
+    .other, .reserveringen, .menu-toevoegen, .gerecht-kiezen, .menu-bewerken, .login {
+        font-family: $font-body;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font-body;
+        }
+
+        h4 {
+            font-size: $step-2;
+        }
+
+        h5 {
+            font-weight: 500;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+    }
+}

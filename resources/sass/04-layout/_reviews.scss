@@ -1,0 +1,80 @@
+@use '../01-usables/usables' as *;
+
+@media screen and (max-width: 700px) {
+    .review-card {
+        width: 300px;
+        height: 375px;
+
+        h4.review-card-star-text-name-title {
+            transform: scale(1.3);
+        }
+        
+        p {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#reviews {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-top: 2px $cream solid;
+    padding-top: $space-l-xl;
+    margin-bottom: $space-xl-2xl;
+
+    .cards {
+        display: flex;
+        margin-top: $space-m-l;
+        width: 80vw;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        .review-card {
+            border-radius: 10px;
+            border: 1px $black solid;
+            padding: 30px 35px;
+            margin-bottom: $space-xs-s;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-between;
+            &-star-text {
+                text-align: center;
+                &-name {
+                    &-title {
+                        font-size: $step-1;
+                        font-weight: 700;
+                    }
+                    margin-bottom: calc($space-2xs-xs * 0.7);
+                }
+                &-review {
+                    p {
+                        font-size: 0.7em;
+                    }
+                }
+                &-stars {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    margin-top: calc($space-2xs-xs * 0.7);;
+                }
+            }
+            &-image {
+                width: 60%;
+                img {
+                    width: 100%;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .review-card {
+        width: 320px;
+        height: 400px;
+    }
+}
+

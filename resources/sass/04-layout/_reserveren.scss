@@ -1,0 +1,85 @@
+@use '../01-usables/usables' as *;
+
+#reserveren {
+    width: 80vw;
+    margin: 0 auto $space-xl-2xl;
+
+    &-titel {
+        margin-top: $space-l-xl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-flow: column wrap;
+    }
+
+    form {
+        margin: $space-m-l 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        .form-input-field {
+            div {
+                margin-bottom: $space-2xs-xs;
+                display: flex;
+                flex-flow: column-reverse wrap;
+            }
+
+            label {
+                font-size: 0.9em;
+            }
+            input, select {
+                font-family: $font-body;
+                background-color: hsla(0, 0%, 85%, 0.5);
+                outline: none;
+                border: 1px $black solid;
+                border-radius: 10px;
+                height: 50px;
+                padding: 0 20px;
+                font-size: 0.85em;
+                option {
+                    font-family: $font-body;
+                    font-size: 1.1em;
+                }
+
+                &:focus {
+                    border: 1px $clr-primary solid;
+
+                    & + label {
+                        color: $clr-primary;
+                    }
+                }
+            }
+        }
+        button {
+            margin-top: $space-s-m;
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .form-input-field {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        width: 80vw;
+
+        input, select {
+            width: 35vw;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form-input-field {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 80vw;
+
+        input, select {
+            width: 60vw;
+        }
+    }
+}

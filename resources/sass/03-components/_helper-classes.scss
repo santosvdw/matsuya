@@ -1,0 +1,28 @@
+@use '../01-usables/usables' as *;
+
+.cream {
+    color: $cream;
+}
+
+.white {
+    color: $white;
+}
+
+a.white:hover {
+    color: $clr-primary;
+}
+
+.active-link {
+    color: $clr-primary;
+    font-weight: 600;
+}
+
+.antic {
+    font-family: $font-title;
+    font-weight: 400;
+}
+
+.bold-italic {
+    font-weight: 800;
+    font-style: italic;
+}

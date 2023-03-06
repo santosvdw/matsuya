@@ -1,0 +1,50 @@
+@use '../01-usables/usables' as *;
+
+.alert {
+    background-color: rgb(76, 175, 119);
+    border-bottom: 10px solid seagreen;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    display: grid;
+    top: -75px;
+    font-weight: 500;
+    z-index: 9998;
+    place-items: center;
+    color: $white;
+    -webkit-animation: slideIn 0.5s forwards;
+    animation: slideIn 0.5s forwards;
+
+    &-x {
+        position: absolute;
+        z-index: 9999;
+        top: 5px;
+        right: 25px;
+        cursor: pointer;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        top: -75px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+@keyframes slideOut {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -75px;
+        display: none;
+    }
+}
+
+.hide-alert {
+    animation: slideOut 0.5s forwards;
+    -webkit-animation: slideOut 0.5s forwards;
+}

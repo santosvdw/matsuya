@@ -1,0 +1,38 @@
+@use '../01-usables/usables' as *;
+
+#button-cta, button.button-cta {
+    border-radius: 15px 0 15px 0;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    font-size: $step-0;
+    text-decoration: none;
+}
+
+.button-green {
+    background-color: $clr-primary;
+    color: $cream;
+
+    a {
+        color: $cream;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $clr-secondary;
+        cursor: pointer;
+    }
+}
+
+.button-cream {
+    background-color: $cream;
+
+    a {
+        color: $clr-primary;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $cream-dark;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,102 @@
+@use '../01-usables/usables' as *;
+
+.reserveringen {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    h2 {
+        margin: $space-m-l 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80vw;
+        thead {
+            td {
+                background-color: $clr-primary;
+            }
+        }
+        
+        tr {
+            &.toekomstig {
+                background-color: rgb(230, 229, 229);
+                a, td {
+                    color: rgb(202, 202, 202);
+                }
+                a:hover {
+                    color: rgb(102, 102, 102);
+                }
+            }
+
+            &.verlopen {
+                background-color: rgb(230, 255, 234);
+                a, td {
+                    color: rgb(157, 204, 148);
+                }
+                a:hover {
+                    color: rgb(39, 117, 45);
+                }
+            }
+
+            &.huidig:nth-of-type(even) {
+                background-color: rgb(230, 250, 230);
+            }
+        }
+
+        td {
+            padding: 5px 10px;
+            border: 1px solid $black;
+
+            a:hover {
+                color: darkblue;
+            }
+
+            &.reservering-naam {
+                text-transform:capitalize;
+            }
+
+            .contact-icon {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $clr-primary;
+                border-radius: 3px;
+                font-size: 1.25em;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .verlopen-reserveringen-show-hide {
+        margin: $space-l-xl 0 $space-m-l ;
+    }
+
+    section#verlopen-reserveringen {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+        padding: 8px 12px;
+        font-size: 1em;
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    section#verlopen-reserveringen.show {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        margin-bottom: $space-m-l;
+
+        h2 {
+            margin: 0 0 $space-m-l;
+        }
+    }
+}
