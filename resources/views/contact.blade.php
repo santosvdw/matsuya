@@ -1,4 +1,4 @@
-@extends('layout/layout')
+@extends('layouts/layout')
 
 @section('content')
     <div id="contact-page">
@@ -20,7 +20,7 @@
                             </tr>
                             <tr>
                                 <td class="bold">Emailadres</td>
-                                <td><a href="mailto:email@adres.nl">Email@adres.nl</a></td>
+                                <td><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></td>
                             </tr>
                         </tbody>
                     </table>

@@ -1,3 +1,5 @@
+// import './bootstrap';
+
 const openBtn = document.querySelector("#open-button");
 const closeBtn = document.querySelector("#close-button");
 const menuEl = document.querySelector("#nav-tel-menu");
@@ -26,3 +28,9 @@ const hide = () => {
 };
 
 setTimeout(hide, 7500);
+
+import Alpine from "alpinejs";
+
+window.Alpine = Alpine;
+
+Alpine.start();

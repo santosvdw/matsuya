@@ -74,6 +74,8 @@
                     </tbody>
                 </table>
             </section>
+
+            <a href="/dashboard">Terug naar dashboard</a>
         </main>
     </body>
 </html>

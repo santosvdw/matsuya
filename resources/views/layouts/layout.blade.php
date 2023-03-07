@@ -75,7 +75,7 @@
                     <h5>Contactinformatie</h5>
                     <ul>
                         <li>Grote Beer 4, 1622 ES Hoorn</li>
-                        <li><a href="mailto:email@adres.nl">Email@adres.nl</a></li>
+                        <li><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></li>
                         <li><a href="tel:0229 238 634">0229 238 634</a></li>
                     </ul>
                 </div>
@@ -83,8 +83,8 @@
                     <div class="content">
                         <h5>Sociale media</h5>
                         <ul>
-                            <li><a href="https://instagram.com/matsuyahoorn">Instagram</a></li>
-                            <li><a href="https://facebook.com">Facebook</a></li>
+                            <li><a href="https://instagram.com/matsuyahoorn" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100088068972733" target="_blank">Facebook</a></li>
                         </ul>
                     </div>
                 </div>

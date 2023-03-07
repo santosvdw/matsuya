@@ -41,7 +41,7 @@
                                 <td><input type="text" name="beschrijving" id="beschrijving"></td>
                                 <td>
                                     <select required name="categorie_naam" id="categorie_naam">
-                                    <optgroup label="Selectereb">Selecteren</optgroup>
+                                    <optgroup label="Selecteren">Selecteren</optgroup>
                                     @foreach ($categorieen as $categorie)
                                         <option name="{{$categorie->naam}}" value="{{$categorie->naam}}">{{$categorie->naam}}</option>
                                     @endforeach    
@@ -69,7 +69,9 @@
                     </tbody>
                 </table>
 
-                <a href="/menu">Bekijk het menu</a>
+                <a href="/menu">Bekijk het menu</a><br>
+                <a href="/menu/bewerken">Bewerk een gerecht</a><br>
+                <a href="/dashboard">Terug naar het dashboard</a>
             </section>
         </main>
     </body>

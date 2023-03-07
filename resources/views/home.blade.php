@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Matsuya | Homepagina</title>
+        <meta name="description" content="Matsuya is het beste Japans restaurant van Hoorn. Hier kun je allerlei lekkere Japanse gerechten, zoals Sushi en Poke Bowls halen. Kom snel langs!">
+        <meta name="keywords" content="matsuya, japans restaurant, hoorn, japanse restaurant, restaurant, hoorns restaurant, matsuya hoorn, matsuya japans restaurant, lekker eten, teppanyaki, matsuya restaurant, sushi, tempura hoorn, sushi hoorn, aziatisch eten, matsuya aziatisch restaurant, aziatisch restaurant, aziatisch eten afhalen, poke bowl, poke bowl hoorn, matsuya poke bowl,">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="Dutch">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Yuji+Boku&display=swap" rel="stylesheet" />
@@ -143,7 +147,7 @@
                     </div>
                     <div id="contact">
                         <h2 class="cream">Contact</h2>
-                        <a class="white" href="/">email@adres.nl</a>
+                        <a class="white" href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a>
                         <a class="white" href="tel:0229238634">0229 238 634</a>
                     </div>
                     <div id="adres">
@@ -220,14 +224,6 @@
                                 <option name="19:30" id="19:30" value="19:30">19:30</option>
                                 <option name="19:45" id="19:45" value="19:45">19:45</option>
                                 <option name="20:00" id="20:00" value="20:00">20:00</option>
-                                <option name="20:15" id="20:15" value="20:15">20:15</option>
-                                <option name="20:30" id="20:30" value="20:30">20:30</option>
-                                <option name="20:45" id="20:45" value="20:45">20:45</option>
-                                <option name="21:00" id="21:00" value="21:00">21:00</option>
-                                <option name="21:15" id="21:15" value="21:15">21:15</option>
-                                <option name="21:30" id="21:30" value="21:30">21:30</option>
-                                <option name="21:45" id="21:45" value="21:45">21:45</option>
-                                <option name="22:00" id="22:00" value="22:00">22:00</option>
                             </select>
                             <label for="tijd">Tijd:</label>
                         </div>
@@ -311,7 +307,7 @@
                     <h5>Contactinformatie</h5>
                     <ul>
                         <li>Grote Beer 4, 1622 ES Hoorn</li>
-                        <li><a href="mailto:email@adres.nl">Email@adres.nl</a></li>
+                        <li><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></li>
                         <li><a href="tel:0229 238 634">0229 238 634</a></li>
                     </ul>
                 </div>
@@ -319,8 +315,8 @@
                     <div class="content">
                         <h5>Sociale media</h5>
                         <ul>
-                            <li><a href="https://instagram.com/matsuyahoorn">Instagram</a></li>
-                            <li><a href="https://facebook.com">Facebook</a></li>
+                            <li><a href="https://instagram.com/matsuyahoorn" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100088068972733" target="_blank">Facebook</a></li>
                         </ul>
                     </div>
                 </div>
@@ -332,6 +328,7 @@
                             <li><a href="/menu">Menu</a></li>
                             <li><a href="/contact">Contact</a></li>
                             <li><a href="/vacatures">Vacatures</a></li>
+                            <li><a href="{{ route('login') }}">Log in</a></li>
                         </ul>
                     </div>
                 </div>

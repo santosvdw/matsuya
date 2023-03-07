@@ -7,7 +7,11 @@
     align-items: center;
 
     h2 {
-        margin: $space-m-l 0;
+        margin-top: $space-m-l;
+    }
+
+    .links {
+        margin: 0 0 $space-m-l ;
     }
 
     ul {

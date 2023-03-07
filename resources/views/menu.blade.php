@@ -1,5 +1,5 @@
 
-@extends('layout/layout')
+@extends('layouts/layout')
 
 @section('content')
 <div id="menu">
