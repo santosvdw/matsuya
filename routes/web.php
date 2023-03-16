@@ -66,6 +66,11 @@ Route::get('/menu', function () {
     return view('menu', ['menu' => Menu::all(), 'categorieen' => Categories::all()]);
 });
 
+// Verzend reservering
+Route::post('/reserveren', [ReserveringController::class, 'store']);
+
+// // Verzend reservering
+// Route::post('/reserveren', [ReserveringController::class, 'store']);
 // // Menu-item toevoegen
 // Route::get('/menu/toevoegen', [MenuController::class, 'add']);
 
@@ -90,6 +95,3 @@ Route::get('/menu', function () {
 
 // // RESERVERINGEN
 // Route::get('/reserveringen', [ReserveringController::class, 'index']);
-
-// // Verzend reservering
-// Route::post('/reserveren', [ReserveringController::class, 'store']);

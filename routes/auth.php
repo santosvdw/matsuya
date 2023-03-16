@@ -62,9 +62,6 @@ Route::middleware('guest')->group(function () {
         return view('menu', ['menu' => Menu::all(), 'categorieen' => Categories::all()]);
     });
 
-    // Verzend reservering
-    Route::post('/reserveren', [ReserveringController::class, 'store']);
-
     Route::get('/', function () {
         return view('home');
     });

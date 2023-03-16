@@ -11,7 +11,7 @@
                 </div>
                 <div class="vacature-geinteresseerd">
                     <h3 class="bold-italic">Geïnteresseerd?</h3>
-                    <p>Stuur een mailtje naar <a href="mailto:susansky88@gmail.com">susansky88@gmail.com</a> of bel <a href="tel:+31646322283">+31646322283</a></p>
+                    <p>Stuur een mailtje naar <a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a> of bel <a href="tel:+31646322283">+31646322283</a></p>
                 </div>
             </div>
 @endsection

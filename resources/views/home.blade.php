@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Matsuya | Homepagina</title>
-        <meta name="description" content="Matsuya is het beste Japans restaurant van Hoorn. Hier kun je allerlei lekkere Japanse gerechten, zoals Sushi en Poke Bowls halen. Kom snel langs!">
-        <meta name="keywords" content="matsuya, japans restaurant, hoorn, japanse restaurant, restaurant, hoorns restaurant, matsuya hoorn, matsuya japans restaurant, lekker eten, teppanyaki, matsuya restaurant, sushi, tempura hoorn, sushi hoorn, aziatisch eten, matsuya aziatisch restaurant, aziatisch restaurant, aziatisch eten afhalen, poke bowl, poke bowl hoorn, matsuya poke bowl,">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="Dutch">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Yuji+Boku&display=swap" rel="stylesheet" />
+        <meta name="description" content="Matsuya is het beste Japans restaurant van Hoorn. Hier kun je allerlei lekkere Japanse gerechten, zoals Sushi en Poke Bowls halen. Kom snel langs!">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <meta name="keywords" content="matsuya, japans restaurant, hoorn, japanse restaurant, restaurant, hoorns restaurant, matsuya hoorn, matsuya japans restaurant, lekker eten, teppanyaki, matsuya restaurant, sushi, tempura hoorn, sushi hoorn, aziatisch eten, matsuya aziatisch restaurant, aziatisch restaurant, aziatisch eten afhalen, poke bowl, poke bowl hoorn, matsuya poke bowl,">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="Dutch">
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body>
@@ -193,37 +193,7 @@
 
                         <div id="tijd-input">
                             <select required name="tijd" id="tijd">
-                                <option name="12:30" id="12:30" value="12:30">12:30</option>
-                                <option name="12:45" id="12:45" value="12:45">12:45</option>
-                                <option name="13:00" id="13:00" value="13:00">13:00</option>
-                                <option name="13:15" id="13:15" value="13:15">13:15</option>
-                                <option name="13:30" id="13:30" value="13:30">13:30</option>
-                                <option name="13:45" id="13:45" value="13:45">13:45</option>
-                                <option name="14:00" id="14:00" value="14:00">14:00</option>
-                                <option name="14:15" id="14:15" value="14:15">14:15</option>
-                                <option name="14:30" id="14:30" value="14:30">14:30</option>
-                                <option name="14:45" id="14:45" value="14:45">14:45</option>
-                                <option name="15:00" id="15:00" value="15:00">15:00</option>
-                                <option name="15:15" id="15:15" value="15:15">15:15</option>
-                                <option name="15:30" id="15:30" value="15:30">15:30</option>
-                                <option name="15:45" id="15:45" value="15:45">15:45</option>
-                                <option name="16:00" id="16:00" value="16:00">16:00</option>
-                                <option name="16:15" id="16:15" value="16:15">16:15</option>
-                                <option name="16:30" id="16:30" value="16:30">16:30</option>
-                                <option name="16:45" id="16:45" value="16:45">16:45</option>
-                                <option name="17:00" id="17:00" value="17:00">17:00</option>
-                                <option name="17:15" id="17:15" value="17:15">17:15</option>
-                                <option name="17:30" id="17:30" value="17:30">17:30</option>
-                                <option name="17:45" id="17:45" value="17:45">17:45</option>
-                                <option name="18:00" id="18:00" value="18:00">18:00</option>
-                                <option name="18:15" id="18:15" value="18:15">18:15</option>
-                                <option name="18:30" id="18:30" value="18:30">18:30</option>
-                                <option name="18:45" id="18:45" value="18:45">18:45</option>
-                                <option name="19:00" id="19:00" value="19:00">19:00</option>
-                                <option name="19:15" id="19:15" value="19:15">19:15</option>
-                                <option name="19:30" id="19:30" value="19:30">19:30</option>
-                                <option name="19:45" id="19:45" value="19:45">19:45</option>
-                                <option name="20:00" id="20:00" value="20:00">20:00</option>
+                                
                             </select>
                             <label for="tijd">Tijd:</label>
                         </div>
@@ -328,7 +298,7 @@
                             <li><a href="/menu">Menu</a></li>
                             <li><a href="/contact">Contact</a></li>
                             <li><a href="/vacatures">Vacatures</a></li>
-                            <li><a href="{{ route('login') }}">Log in</a></li>
+                            {{-- <li><a href="{{ route('login') }}">Log in</a></li> --}}
                         </ul>
                     </div>
                 </div>
