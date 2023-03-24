@@ -12,11 +12,18 @@
         @vite(['resources/sass/admin.scss', 'resources/js/menu.js'])
     </head>
     <body>
+        @if (session('status'))
+            <div class="alert">
+                <i class="alert-x close-alert bi bi-x-lg"></i>
+                {{ session('status') }}
+            </div>
+        @endif
         <main class="dashboard">
             <h2>Wat wil je doen?</h2>
             
             <ul>
                 <li><a href="/reserveringen">Reserveringen van vandaag bekijken</a></li>
+                <li><a href="/reserveringen/zoeken">Reserveringen aanpassen</a></li>
                 <li><a href="/menu/toevoegen">Gerechten toevoegen</a></li>
                 <li><a href="/menu/bewerken">Gerechten bewerken/verwijderen</a></li>
             </ul>

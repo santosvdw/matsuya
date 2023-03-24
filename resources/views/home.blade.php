@@ -23,6 +23,10 @@
     </div>
 @endif
 
+<div class="alert-field">
+    
+</div>
+
         <nav id="nav">
             <div class="desktop">
                 <div class="nav-links">
@@ -69,6 +73,10 @@
                     <img src="{{asset('assets/header-img.webp')}}" alt="Ons eten" />
                 </div>
             </header>
+
+            <section id="intro">
+                <p>Hallo, welkom bij het beste Japans restaurant van Hoorn, Matsuya! Bij Matsuya kunt u afhalen of u kunt gezellig langskomen om All You Can Eat te eten!</p>
+            </section>
 
             <div id="menu-open-contact">
                 <div id="menu">
@@ -145,14 +153,24 @@
                         <h2 class="cream">Openingstijden</h2>
                         <p class="white">MA-DO: 12:30-22:00<br>VR-ZO: 12:30-22:30</p>
                     </div>
-                    <div id="contact">
-                        <h2 class="cream">Contact</h2>
-                        <a class="white" href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a>
-                        <a class="white" href="tel:0229238634">0229 238 634</a>
-                    </div>
-                    <div id="adres">
-                        <h2 class="cream">Adres</h2>
-                        <p class="white">Grote Beer 4, 1622 ES Hoorn</p>
+                    <div id="prijzen">
+                        <h2 class="cream">Prijzen</h2>
+                        <p class="cream subheading"><strong>(All you can eat)</strong></p>
+                        <p class="white">
+                            <span class="lunch">
+                                <strong>LUNCH</strong>
+                                <br>&euro;25,95
+                            </span>
+                            <span class="diner">
+                                <strong>DINER</strong>
+                                <br>MA-DO: &euro;30,95
+                                <br>VR-ZO: &euro;32,95
+                            </span>
+                            <span class="kids">
+                                <strong>KINDERPRIJS</strong>
+                                <br>&euro;16,50
+                            </span>                            
+                        </p>
                     </div>
                 </div>
             </div>
@@ -204,6 +222,8 @@
                         </div>
                     </div>
 
+                    <span id="error-msg-vol"></span>
+
                     <button type="submit" id="reserveer-submit" class="button-cta button-green">Reserveer nu</button>
                 </form>
             </div>
@@ -213,13 +233,13 @@
                 <h2>Reviews</h2>
                 <div class="cards">
                     <div class="review-card">
-                        <div class="review-card-image">
+                        {{-- <div class="review-card-image">
                             <img src="{{asset('assets/persoon-1.webp')}}" loading="lazy" alt="persoon 1" />
-                        </div>
+                        </div> --}}
                         <div class="review-card-star-text">
-                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">Silvia de Mol</h4></div>
+                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">M. A.</h4></div>
                             <div class="review-card-star-text-review">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore, quos nemo ullam omnis tempora quisquam minima repudiandae neque animi.</p>
+                                <p>Vanavond hebben wij hier heerlijk gegeten. De sushi was het wachten zeker waard. Het personeel is ook erg vriendelijk. Volgende keer komen wij hier zeker terug.</p>
                             </div>
                             <div class="review-card-star-text-stars">
                                 <img src="{{asset('assets/ster.webp')}}" loading="lazy" class="review-card-star-text-stars-star" alt="Ster" />
@@ -231,13 +251,13 @@
                         </div>
                     </div>
                     <div class="review-card">
-                        <div class="review-card-image">
+                        {{-- <div class="review-card-image">
                             <img src="{{asset('assets/persoon-2.webp')}}" loading="lazy" alt="persoon 1" />
-                        </div>
+                        </div> --}}
                         <div class="review-card-star-text">
-                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">Julia Smit</h4></div>
+                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">E. W.</h4></div>
                             <div class="review-card-star-text-review">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore, quos nemo ullam omnis tempora quisquam minima repudiandae neque animi.</p>
+                                <p>Ik heb hier laatst voor het eerst met mijn gezin gegeten. Er is zeer vriendelijk personeel dat voor alles uitlegt wat voor eten het is. En het eten is echt heerlijk. Wij gaan hier zeker vaker komen eten.</p>
                             </div>
                             <div class="review-card-star-text-stars">
                                 <img src="{{asset('assets/ster.webp')}}" loading="lazy" class="review-card-star-text-stars-star" alt="Ster" />
@@ -249,13 +269,13 @@
                         </div>
                     </div>
                     <div class="review-card">
-                        <div class="review-card-image">
+                        {{-- <div class="review-card-image">
                             <img src="{{asset('assets/persoon-3.webp')}}" loading="lazy" alt="persoon 1" />
-                        </div>
+                        </div> --}}
                         <div class="review-card-star-text">
-                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">John Stegen</h4></div>
+                            <div class="review-card-star-text-name"><h4 class="review-card-star-text-name-title">J. V.</h4></div>
                             <div class="review-card-star-text-review">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore, quos nemo ullam omnis tempora quisquam minima repudiandae neque animi.</p>
+                                <p>Ik heb hier meerdere keren heerlijk gegeten. De bediening is vriendelijk, de gerechten zijn zeer smakelijk en snel geserveerd. Wij komen graag terug om zowel af te halen en om in het restaurant te eten.</p>
                             </div>
                             <div class="review-card-star-text-stars">
                                 <img src="{{asset('assets/ster.webp')}}" loading="lazy" class="review-card-star-text-stars-star" alt="Ster" />
@@ -304,7 +324,7 @@
                 </div>
             </div>
             <div class="bottom-footer">
-                <div class="copyright">Matsuya &#169; 2023, Alle rechten voorbehouden</div>
+                <div class="copyright"></div>
                 <div class="watermark">
                     Deze website is gemaakt door
                     <span class="watermark-link">

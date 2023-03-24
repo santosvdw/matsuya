@@ -52,6 +52,12 @@
                 }
             }
         }
+
+        #error-msg-vol {
+            color: crimson;
+            text-align: center;
+        }
+
         button {
             margin-top: $space-s-m;
         }

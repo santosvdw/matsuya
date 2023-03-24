@@ -2,6 +2,11 @@
 
 use App\Models\Menu;
 use App\Models\Categories;
+use Illuminate\Http\Request;
+use App\Mail\ReserveringBewerkt;
+use App\Mail\ReserveringAnnulatie;
+use App\Mail\ReserveringConfirmatie;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ProfileController;
@@ -68,30 +73,3 @@ Route::get('/menu', function () {
 
 // Verzend reservering
 Route::post('/reserveren', [ReserveringController::class, 'store']);
-
-// // Verzend reservering
-// Route::post('/reserveren', [ReserveringController::class, 'store']);
-// // Menu-item toevoegen
-// Route::get('/menu/toevoegen', [MenuController::class, 'add']);
-
-// Route::post('/menu/toegevoegd', [MenuController::class, 'store']);
-
-// // Menu-item selecteren
-// Route::get('/menu/bewerken',  function () {
-//     return view('menu_bewerken', [
-//         'menu' => Menu::all(),
-//         'categorieen' => Categories::all()
-//     ]);
-// });
-
-// // Menu-item bewerken
-// Route::get('/menu/bewerken/{id}',  [MenuController::class, 'edit']);
-
-// // Bewerking submit menu-item
-// Route::put('menu/bewerken/{id}/bewerkt', [MenuController::class, 'update']);
-
-// // Verwijder gerecht
-// Route::delete('menu/verwijderen/{id}', [MenuController::class, 'destroy']);
-
-// // RESERVERINGEN
-// Route::get('/reserveringen', [ReserveringController::class, 'index']);

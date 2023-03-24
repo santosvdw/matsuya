@@ -1,0 +1,16 @@
+@use '../01-usables/usables' as *;
+
+#intro {
+    width: 100vw;
+    padding: $space-xs-s 0;
+    background-color: $cream;
+    display: grid;
+    place-items: center;
+
+    p {
+        color: $black;
+        text-align: center;
+        width: 60vw;
+        font-style: italic;
+    }
+}

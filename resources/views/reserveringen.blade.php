@@ -12,6 +12,12 @@
         @vite(['resources/sass/admin.scss', 'resources/js/reserveringen.js'])
     </head>
     <body>
+        @if (session('status'))
+            <div class="alert">
+                <i class="alert-x close-alert bi bi-x-lg"></i>
+                {{ session('status') }}
+            </div>
+        @endif
         <main class="reserveringen">
             <header>
                 <h2>De reserveringen van vandaag</h2>
@@ -23,6 +29,7 @@
                     <td>Aantal personen</td>
                     <td>Telefoon</td>
                     <td>Email</td>
+                    <td>Annuleren</td>
                 </thead>
                 <tbody>
                 @foreach ($huidig as $reservering)
@@ -32,6 +39,7 @@
                     <td>{{$reservering->aant_personen}}</td>
                     <td><a href="tel:{{$reservering->telefoon}}">{{$reservering->telefoon}}</a></td>
                     <td><a href="mailto:{{$reservering->email}}">{{$reservering->email}}</a></td>
+                    <td><a href="/reservering/{{$reservering->id}}"><i class="bi bi-trash3-fill"></i></a></td>
                 </tr>
                 @endforeach
                 @foreach ($toekomstig as $reservering)
@@ -41,6 +49,7 @@
                     <td>{{$reservering->aant_personen}}</td>
                     <td><a href="tel:{{$reservering->telefoon}}">{{$reservering->telefoon}}</a></td>
                     <td><a href="mailto:{{$reservering->email}}">{{$reservering->email}}</a></td>
+                    <td><a href="/reservering/{{$reservering->id}}"><i class="bi bi-trash3-fill"></i></a></td>
                 </tr>
                 @endforeach
                 </tbody>

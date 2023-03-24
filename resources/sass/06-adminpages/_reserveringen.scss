@@ -10,6 +10,17 @@
         margin: $space-m-l 0;
     }
 
+    i {
+        height: 32px;
+        display: grid;
+        place-items: center;
+        width: 32px;
+        color: $white;
+        background-color: red;
+        cursor: pointer;
+        fill: $white;
+    }
+
     table {
         border-collapse: collapse;
         width: 80vw;
@@ -27,6 +38,10 @@
                 }
                 a:hover {
                     color: rgb(102, 102, 102);
+                }
+
+                i {
+                    background-color: rgb(255, 136, 136);
                 }
             }
 

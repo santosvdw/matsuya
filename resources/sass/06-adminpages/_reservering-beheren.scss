@@ -1,0 +1,14 @@
+@use '../01-usables/usables' as *;
+
+#reden {
+    button {
+            margin-top: $space-2xs-xs;
+            padding: 6px 9px;
+            font-size: 1em;
+            background-color: red;
+            color: $white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+}

@@ -1,6 +1,6 @@
 @use '../01-usables/usables' as *;
 
-.menu-toevoegen, .menu-bewerken {
+.menu-toevoegen, .menu-bewerken, .reservering-annuleren, .reservering-zoeken {
     display: flex;
     flex-flow: column wrap;
     align-items: center;

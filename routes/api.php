@@ -3,6 +3,7 @@
 use Carbon\Carbon;
 use App\Models\Reservering;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,17 @@ Route::get('/aantal_klanten', function () {
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+// SELECT tijd, count(*) FROM `reserverings` GROUP BY tijd;
+
+
+Route::get('/tafels_beschikbaar', function () {
+    $tafels = DB::table("reserverings")
+        ->selectRaw("tijd, datum, count(*) AS 'bezet'")
+        ->groupBy("tijd", "datum")
+        ->get();
+    return response()->json([
+        'tafels' => $tafels
+    ]);
 });

@@ -1,6 +1,7 @@
 @use '../01-usables/usables' as *;
 
 .dashboard {
+    margin-top: $space-m-l;
     display: flex;
     flex-flow: column;
     align-items: center;

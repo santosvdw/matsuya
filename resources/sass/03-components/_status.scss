@@ -1,6 +1,6 @@
 @use '../01-usables/usables' as *;
 
-.alert {
+.alert{
     background-color: rgb(76, 175, 119);
     border-bottom: 10px solid seagreen;
     position: fixed;
@@ -47,4 +47,9 @@
 .hide-alert {
     animation: slideOut 0.5s forwards;
     -webkit-animation: slideOut 0.5s forwards;
+}
+
+.alert.red {
+    background-color: crimson;
+    border-bottom: 10px solid rgb(245, 67, 103);
 }

@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="bottom-footer">
-                <div class="copyright">Matsuya &#169; 2023, Alle rechten voorbehouden</div>
+                <div class="copyright"></div>
                 <div class="watermark">
                     Deze website is gemaakt door
                     <span class="watermark-link">

@@ -2,12 +2,16 @@
 
 use App\Models\Menu;
 use App\Models\Categories;
+use App\Models\Reservering;
+use Illuminate\Http\Request;
+use App\Mail\ReserveringAnnulatie;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ReserveringController;
 use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\VerifyEmailController;
-use App\Http\Controllers\ReserveringController;
-use App\Http\Controllers\MenuController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
@@ -114,6 +118,23 @@ Route::middleware('auth')->group(function () {
     // Verwijder gerecht
     Route::delete('menu/verwijderen/{id}', [MenuController::class, 'destroy']);
 
+    // Bekijk specifieke reservering
+    Route::get('/reservering/{id}', [ReserveringController::class, 'edit']);
+
     // RESERVERINGEN
     Route::get('/reserveringen', [ReserveringController::class, 'index']);
+
+    // RESERVERINGEN ZOEKEN
+    Route::get('/reserveringen/zoeken', function () {
+        return view('reservering_zoeken');
+    });
+
+    // Verwijzen naar juiste reservering
+    Route::post('/reserveringen/gezocht', [ReserveringController::class, 'search']);
+
+    // Verwijzen naar juiste reservering
+    Route::put('/reservering/bewerkt/{id}', [ReserveringController::class, 'update']);
+
+    // Reserveringen
+    Route::delete('/reservering/verwijderen/{id}', [ReserveringController::class, 'destroy']);
 });
