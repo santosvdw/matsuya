@@ -20,7 +20,7 @@
                             </tr>
                             <tr>
                                 <td class="bold">Emailadres</td>
-                                <td><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></td>
+                                <td><a href="mailto:info@matsuya.nl">info@matsuya.nl</a></td>
                             </tr>
                         </tbody>
                     </table>

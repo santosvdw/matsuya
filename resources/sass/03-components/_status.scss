@@ -15,6 +15,10 @@
     -webkit-animation: slideIn 0.5s forwards;
     animation: slideIn 0.5s forwards;
 
+    p {
+        text-align: center;
+    }
+
     &-x {
         position: absolute;
         z-index: 9999;

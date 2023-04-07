@@ -31,7 +31,7 @@ class ReserveringBewerkt extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Reservering Bewerkt',
+            subject: 'Reservering is bwewerkt',
         );
     }
 

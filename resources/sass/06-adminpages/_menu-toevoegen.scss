@@ -21,9 +21,11 @@
         td {
             padding: 4px 8px;
             border: 1px solid $black;
+            width: fit-content;
             input {
                 margin: auto;
                 display: block;
+                width: min-content;
 
                 &.prijs {
                     width: 75px;

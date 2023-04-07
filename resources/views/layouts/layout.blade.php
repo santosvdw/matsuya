@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Matsuya | @if (empty($title))
-                            Menu  
+                            Afhaalmenu  
                         @else
                             {{$title}}        
                         @endif</title>
@@ -13,7 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Yuji+Boku&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        <link rel="stylesheet" href="https://matsuya.nl/build/assets/app-8bd73726.css">
+        <script src='https://matsuya.nl/build/assets/app-efc3e11b.js' type="module"></script>
     </head>
     <body>
         <nav id="nav">
@@ -55,7 +56,7 @@
             <header>
                 <div class="header-title">
                     <h1>@if (empty($title))
-                            Menu  
+                            Afhaalmenu  
                         @else
                             {{$title}}        
                         @endif
@@ -75,7 +76,7 @@
                     <h5>Contactinformatie</h5>
                     <ul>
                         <li>Grote Beer 4, 1622 ES Hoorn</li>
-                        <li><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></li>
+                        <li><a href="mailto:info@matsuya.nl">info@matsuya.nl</a></li>
                         <li><a href="tel:0229 238 634">0229 238 634</a></li>
                     </ul>
                 </div>

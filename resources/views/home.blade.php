@@ -13,13 +13,16 @@
         <meta name="keywords" content="matsuya, japans restaurant, hoorn, japanse restaurant, restaurant, hoorns restaurant, matsuya hoorn, matsuya japans restaurant, lekker eten, teppanyaki, matsuya restaurant, sushi, tempura hoorn, sushi hoorn, aziatisch eten, matsuya aziatisch restaurant, aziatisch restaurant, aziatisch eten afhalen, poke bowl, poke bowl hoorn, matsuya poke bowl,">
         <meta name="robots" content="index, follow">
         <meta name="language" content="Dutch">
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+        <link rel="stylesheet" href="https://matsuya.nl/build/assets/app-8bd73726.css">
+        <script src='https://matsuya.nl/build/assets/app-efc3e11b.js' type="module"></script>
+        
     </head>
     <body>
 @if (session('status'))
     <div class="alert">
         <i class="alert-x close-alert bi bi-x-lg"></i>
-        {{ session('status') }}
+        <p>{{ session('status') }}</p>
     </div>
 @endif
 
@@ -93,7 +96,7 @@
                                             <img src="{{asset('assets/menu-star.webp')}}" loading="lazy" alt="Matsuya" />
                                         </div>
                                     </div>
-                                    <p class="cream">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi.</p>
+                                    <p class="cream">Geniet van onze heerlijke zelfgemaaktse verse sushi in allerlei variaties.</p>
                                 </div>
                                 <div class="menu-card-bg-overlay"></div>
                                 <div class="menu-card-bg"><img src="{{asset('assets/foto-menu-1.webp')}}" loading="lazy" alt="Matsuya" /></div>
@@ -102,12 +105,12 @@
                             <div class="menu-card">
                                 <div class="menu-card-text">
                                     <div class="menu-card-text-title">
-                                        <h5 class="cream antic">Yakitori</h5>
+                                        <h5 class="cream antic">Teppan Yaki</h5>
                                         <div class="menu-card-text-title-star">
                                             <img src="{{asset('assets/menu-star.webp')}}" loading="lazy" alt="Matsuya" />
                                         </div>
                                     </div>
-                                    <p class="cream">Lorem, ipsum dolor sit amet consectetur adipisicing..</p>
+                                    <p class="cream">Probeer onze heerlijke vlees en visgerechten die zijn gegrild op een plaat.</p>
                                 </div>
                                 <div class="menu-card-bg-overlay"></div>
                                 <div class="menu-card-bg"><img src="{{asset('assets/foto-menu-2.webp')}}" loading="lazy" alt="Matsuya" /></div>
@@ -116,12 +119,12 @@
                             <div class="menu-card">
                                 <div class="menu-card-text">
                                     <div class="menu-card-text-title">
-                                        <h5 class="cream antic">Doburi</h5>
+                                        <h5 class="cream antic">Tempura</h5>
                                         <div class="menu-card-text-title-star">
                                             <img src="{{asset('assets/menu-star.webp')}}" loading="lazy" alt="Matsuya" />
                                         </div>
                                     </div>
-                                    <p class="cream">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi.</p>
+                                    <p class="cream">Probeer onze gefrituurde lekkernijen, zoals Loempia en Ebi Tempura.</p>
                                 </div>
                                 <div class="menu-card-bg-overlay"></div>
                                 <div class="menu-card-bg"><img src="{{asset('assets/foto-menu-3.webp')}}" loading="lazy" alt="Matsuya" /></div>
@@ -130,12 +133,12 @@
                             <div class="menu-card">
                                 <div class="menu-card-text">
                                     <div class="menu-card-text-title">
-                                        <h5 class="cream antic">Kaseiki</h5>
+                                        <h5 class="cream antic">Poke Bowl</h5>
                                         <div class="menu-card-text-title-star">
                                             <img src="{{asset('assets/menu-star.webp')}}" loading="lazy" alt="Matsuya" />
                                         </div>
                                     </div>
-                                    <p class="cream">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi.</p>
+                                    <p class="cream">Poke bowls zijn heerlijke gerechten met sushi rijst en gevarieerde toppings.</p>
                                 </div>
                                 <div class="menu-card-bg-overlay"></div>
                                 <div class="menu-card-bg"><img src="{{asset('assets/foto-menu-2.webp')}}" loading="lazy" alt="Matsuya" /></div>
@@ -159,16 +162,17 @@
                         <p class="white">
                             <span class="lunch">
                                 <strong>LUNCH</strong>
-                                <br>&euro;25,95
+                                <br>&euro;25,95 p.p.
                             </span>
                             <span class="diner">
                                 <strong>DINER</strong>
-                                <br>MA-DO: &euro;30,95
-                                <br>VR-ZO: &euro;32,95
+                                <br>MA-DO: &euro;30,95 p.p.
+                                <br>VR-ZO: &euro;32,95 p.p.
+                                <br>Feestdagen: &euro;32,95 p.p.
                             </span>
                             <span class="kids">
-                                <strong>KINDERPRIJS</strong>
-                                <br>&euro;16,50
+                                <strong>KINDERPRIJS (4-10)</strong>
+                                <br>&euro;16,50 p.p.
                             </span>                            
                         </p>
                     </div>
@@ -297,7 +301,7 @@
                     <h5>Contactinformatie</h5>
                     <ul>
                         <li>Grote Beer 4, 1622 ES Hoorn</li>
-                        <li><a href="mailto:matsuya_hoorn@outlook.com">matsuya_hoorn@outlook.com</a></li>
+                        <li><a href="mailto:info@matsuya.nl">info@matsuya.nl</a></li>
                         <li><a href="tel:0229 238 634">0229 238 634</a></li>
                     </ul>
                 </div>

@@ -31,7 +31,7 @@ class ReserveringConfirmatie extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Reservering Confirmatie',
+            subject: 'Reservering is bevestigd',
         );
     }
 

@@ -8,6 +8,7 @@ use App\Mail\ReserveringAnnulatie;
 use App\Mail\ReserveringConfirmatie;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReserveringController;
@@ -73,3 +74,7 @@ Route::get('/menu', function () {
 
 // Verzend reservering
 Route::post('/reserveren', [ReserveringController::class, 'store']);
+
+Route::get('/storage/fotos/{filename}', function ($filename) {
+    return file('../storage/app/public/fotos/' . $filename);
+});

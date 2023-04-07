@@ -12,7 +12,7 @@ Hoi {{$data['voornaam']}}, wat fijn dat u komt eten bij Matsuya! Dit zijn de geg
 
 - Aantal personen: <strong>{{$data['aant_personen']}}</strong>
 
-Zou u iets willen aanpassen aan deze gegevens? Zoals het moment waarop u wilt langskomen bijvoorbeeld of wilt u uw reservering annuleren? Neem dan <a href="tel:0229 238 634">telefonisch</a> of via <a href="mailto:matsuya_hoorn@outlook.com">e-mail</a> contact met ons op.
+Zou u iets willen aanpassen aan deze gegevens? Zoals het moment waarop u wilt langskomen bijvoorbeeld of wilt u uw reservering annuleren? Neem dan <a href="tel:0229 238 634">telefonisch</a> of via <a href="mailto:info@matsuya.nl">e-mail</a> contact met ons op.
 
 Ons adres is __Grote Beer 4, Hoorn__.
 

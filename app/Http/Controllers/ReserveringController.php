@@ -129,8 +129,9 @@ class ReserveringController extends Controller
         Reservering::create($data);
 
         Mail::to($request->email)->send(new ReserveringConfirmatie($data));
+        Mail::to('info@matsuya.nl')->send(new ReserveringConfirmatie($data));
 
-        return redirect('/#reserveren')->with('status', 'Uw reservering is opgeslagen!');
+        return redirect('/#reserveren')->with('status', 'Uw reservering is opgeslagen! Check uw e-mail/spamfolder voor de bevestiging.');
     }
 
     public function edit($id)

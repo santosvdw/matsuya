@@ -63,7 +63,7 @@ const checkIfToday = () => {
             select.innerHTML = `
                 <option name="20:00-22:30" id="20:00-22:30" value="20:00-22:30">20:00-22:30</option>
                 `;
-        } else if (todayHour >= 15) {
+        } else if (todayHour >= 14) {
             select.innerHTML = `
                 <option name="17:30-20:00" id="17:30-20:00" value="17:30-20:00">17:30-20:00</option>
                 <option name="20:00-22:30" id="20:00-22:30" value="20:00-22:30">20:00-22:30</option>
@@ -102,7 +102,7 @@ datumEl.addEventListener("input", checkIfToday);
 
 ////// Beschikbaarheidcheck
 
-fetch("http://matsuya.test/api/tafels_beschikbaar")
+fetch("https://matsuya.nl/api/tafels_beschikbaar")
     .then((response) => response.json())
     .then((data) => {
         const { tafels } = data;
@@ -118,13 +118,13 @@ fetch("http://matsuya.test/api/tafels_beschikbaar")
                 if (
                     tijd == tijdEl.value &&
                     datum == datumEl.value &&
-                    bezet < 20
+                    bezet < 16
                 ) {
                     available();
                 } else if (
                     tijd == tijdEl.value &&
                     datum == datumEl.value &&
-                    bezet >= 20
+                    bezet >= 16
                 ) {
                     available(false, bezet);
                 }
@@ -174,8 +174,8 @@ const hide = () => {
 
 setTimeout(hide, 7500);
 
-import Alpine from "alpinejs";
+// import Alpine from "alpinejs";
 
-window.Alpine = Alpine;
+// window.Alpine = Alpine;
 
-Alpine.start();
+// Alpine.start();

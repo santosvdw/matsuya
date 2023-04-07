@@ -31,7 +31,7 @@ class ReserveringAnnulatie extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Reservering Annulatie',
+            subject: 'Reservering is geannuleerd',
         );
     }
 
